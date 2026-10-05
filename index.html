@@ -7,19 +7,41 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header><a href="/">Drum &amp; Stone</a><nav><a href="#goods">Goods</a><span class="menu">☰</span></nav></header>
+<header>
+<a href="/">Drum &amp; Stone</a>
+<nav>
+<a href="shop.html">Shop</a>
+<div class="goods">
+<button type="button" aria-expanded="false">Goods ☰</button>
+<div class="panel">
+<a href="shop.html#coffee">Roasted coffee</a>
+<a href="shop.html#chocolate">Bean-to-bar chocolate</a>
+<a href="shop.html#jerky">Beef jerky</a>
+<a href="shop.html#fruit">Dried fruit</a>
+<a href="shop.html#noodles">Dry noodles</a>
+<a href="shop.html">All goods</a>
+</div>
+</div>
+</nav>
+</header>
 <main>
 <img class="mark" src="images/log.jpg" alt="Roasting drum on a stone cairn">
 <p class="place">SOUTH FORK, PENNSYLVANIA</p>
 <h1>Coffee, chocolate, and<br>food for the pack.</h1>
 <p class="lede">Small-batch goods from South Fork. Made to carry.</p>
 <section class="grid" id="goods">
-<img src="images/coffee.jpg" alt="Roasted coffee">
-<img src="images/cacao.jpg" alt="Bean-to-bar chocolate">
-<img src="images/jerky.jpg" alt="Beef jerky">
-<img src="images/fruit.jpg" alt="Dried fruit">
-<img src="images/noodles.jpg" alt="Dry noodles">
+<a href="shop.html#coffee"><img src="images/coffee.jpg" alt="Roasted coffee"></a>
+<a href="shop.html#chocolate"><img src="images/cacao.jpg" alt="Bean-to-bar chocolate"></a>
+<a href="shop.html#jerky"><img src="images/jerky.jpg" alt="Beef jerky"></a>
+<a href="shop.html#fruit"><img src="images/fruit.jpg" alt="Dried fruit"></a>
+<a href="shop.html#noodles"><img src="images/noodles.jpg" alt="Dry noodles"></a>
 </section>
 </main>
+<script>
+document.querySelector('.goods button').addEventListener('click', function(){
+  var open = this.parentNode.classList.toggle('open');
+  this.setAttribute('aria-expanded', open);
+});
+</script>
 </body>
 </html>
