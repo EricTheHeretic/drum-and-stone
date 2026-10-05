@@ -7,19 +7,20 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-<a class="logo" href="/" aria-label="Drum and Stone">Drum and Stone</a>
-<a class="shop-link" href="shop.html">Shop</a>
-</header>
+<div class="top">
+<a class="shop" href="shop.html">Shop</a>
+<div class="stage">
+<a class="mark" href="/" aria-label="Drum and Stone"><span class="bars"><i></i><i></i></span><span><b>DRUM</b><b>AND</b><b>STONE</b></span></a>
+</div>
 <main class="shop-page">
 <p class="place">The shop</p>
 <h1>Not for sale yet.</h1>
-<p>Leave a note. Nothing ships until the Pennsylvania kitchen registration is in.</p>
-<article class="item" id="coffee"><div><h2>Coffee</h2><p>Roasted on the drum in South Fork. Whole bean.</p></div></article>
-<article class="item" id="chocolate"><div><h2>Chocolate</h2><p>Bean to bar, ground fine.</p></div></article>
-<article class="item" id="beef"><div><h2>Beef</h2><p>Jerky and biltong, dried for the pack.</p></div></article>
-<article class="item" id="fruit"><div><h2>Dried fruit</h2><p>Fruit dried down so it keeps.</p></div></article>
-<article class="item" id="noodles"><div><h2>Dry noodles</h2><p>Alkaline dough, dried, no egg.</p></div></article>
+<p class="lede">Leave a note. Nothing ships until the Pennsylvania kitchen registration is in.</p>
+<article class="item" id="coffee"><h2>Coffee</h2><p>Whole bean, roasted on the drum in South Fork.</p></article>
+<article class="item" id="chocolate"><h2>Chocolate</h2><p>Bean to bar, ground fine.</p></article>
+<article class="item" id="beef"><h2>Beef</h2><p>Jerky and biltong, dried for the pack.</p></article>
+<article class="item" id="fruit"><h2>Dried fruit</h2><p>Fruit dried down so it keeps.</p></article>
+<article class="item" id="noodles"><h2>Dry noodles</h2><p>Alkaline dough, dried, no egg.</p></article>
 <form action="mailto:eric@drumandstone.com" method="post" enctype="text/plain">
 <h2>Order note</h2>
 <label>Name<input name="name" required></label>
@@ -28,5 +29,6 @@
 <button type="submit">Send the note</button>
 </form>
 </main>
+</div>
 </body>
 </html>
