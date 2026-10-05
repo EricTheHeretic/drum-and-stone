@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop · Drum & Stone</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><a href="/">Drum & Stone</a><nav><div class="drop"><button type="button" aria-expanded="false">Goods</button><div class="menu"><a href="/shop.html#coffee">Roasted coffee</a><a href="/shop.html#chocolate">Bean-to-bar chocolate</a><a href="/shop.html#jerky">Beef jerky</a><a href="/shop.html#fruit">Dried fruit</a><a href="/shop.html#noodles">Dry noodles</a></div></div><a href="/shop.html">Shop</a></nav></header>
+<main class="shop">
+<p class="place">SOUTH FORK, PENNSYLVANIA</p>
+<h1>Shop</h1>
+<p class="lede">The goods are listed. Payment is not open yet. Leave a note and we will write back when the kitchen is approved.</p>
+<section class="shop-grid">
+<article id="coffee"><img src="images/coffee.jpg" alt="Roasted coffee"><h2>Roasted coffee</h2><p>Drum-roasted. Whole bean.</p></article>
+<article id="chocolate"><img src="images/cacao.jpg" alt="Bean-to-bar chocolate"><h2>Bean-to-bar chocolate</h2><p>Stone-ground. Shelf stable.</p></article>
+<article id="jerky"><img src="images/jerky.jpg" alt="Beef jerky"><h2>Beef jerky</h2><p>Dried for the pack.</p></article>
+<article id="fruit"><img src="images/fruit.jpg" alt="Dried fruit"><h2>Dried fruit</h2><p>Dried in South Fork.</p></article>
+<article id="noodles"><img src="images/noodles.jpg" alt="Dry noodles"><h2>Dry noodles</h2><p>Alkaline noodles, dried.</p></article>
+</section>
+<form class="note" id="note">
+<h2>Order note</h2>
+<label>Name<input name="name" required></label>
+<label>Email<input name="email" type="email" required></label>
+<label>What you want<textarea name="want" required placeholder="Coffee, chocolate, jerky, fruit, noodles"></textarea></label>
+<button type="submit">Save note</button>
+<p class="thanks" hidden>Note saved on this page. We are not taking payment yet.</p>
+</form>
+</main>
+<script>
+document.querySelector('.drop button').addEventListener('click',function(){
+  var open=this.parentElement.classList.toggle('open');
+  this.setAttribute('aria-expanded',open);
+});
+document.getElementById('note').addEventListener('submit',function(e){
+  e.preventDefault();
+  this.querySelector('.thanks').hidden=false;
+});
+</script>
+</body>
+</html>
