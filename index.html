@@ -4,22 +4,35 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Drum & Stone</title>
-<link rel="stylesheet" href="styles.css">
+<style>
+body { margin:0; background:#c4a574; color:#1c1612; font-family:Georgia,"Times New Roman",serif; }
+header { display:flex; justify-content:space-between; align-items:center; padding:28px 7vw 0; font-size:22px; }
+header a { color:inherit; text-decoration:none; }
+main { text-align:center; padding:12px 4vw 48px; }
+.logo { width:168px; height:auto; }
+.eyebrow { letter-spacing:.28em; font-size:13px; margin:14px 0 8px; }
+h1 { font-weight:500; font-size:clamp(42px,6vw,68px); line-height:.98; margin:8px auto 12px; max-width:12ch; }
+.lede { font-size:20px; line-height:1.45; }
+.pine { width:150px; height:auto; margin:12px 0 22px; }
+.grid { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; max-width:1100px; margin:0 auto; }
+.grid img { width:100%; height:auto; display:block; }
+@media (max-width:860px) { .grid { grid-template-columns:1fr 1fr; } }
+</style>
 </head>
 <body>
-<header><a href="/">Drum &amp; Stone</a><nav><a href="#goods">Goods</a><span class="menu">☰</span></nav></header>
+<header><a href="/">Drum &amp; Stone</a><div>Goods &nbsp; &#9776;</div></header>
 <main>
-<img class="mark" src="logo.svg" alt="Roasting drum on a stone cairn">
-<p class="place">SOUTH FORK, PENNSYLVANIA</p>
-<h1>Coffee, chocolate, and<br>food for the pack.</h1>
+<img class="logo" src="images/logo.jpg" alt="Roasting drum on stones">
+<p class="eyebrow">SOUTH FORK, PENNSYLVANIA</p>
+<h1>Coffee, chocolate, and food for the pack.</h1>
 <p class="lede">Roasted on a drum. Chocolate ground stone-fine.<br>Jerky, fruit, and noodles dried for the trail.</p>
-<a href="#goods"><img class="pine" src="pine.svg" alt="See the goods"></a>
+<a href="#goods"><img class="pine" src="images/pine.jpg" alt="See the goods"></a>
 <section class="grid" id="goods">
-<article class="card"><img src="coffee.svg" alt="Roasted coffee"><h3>ROASTED COFFEE</h3></article>
-<article class="card"><img src="cacao.svg" alt="Bean-to-bar chocolate"><h3>BEAN-TO-BAR CHOCOLATE</h3></article>
-<article class="card"><img src="jerky.svg" alt="Beef jerky"><h3>BEEF JERKY</h3></article>
-<article class="card"><img src="fruit.svg" alt="Dried fruit"><h3>DRIED FRUIT</h3></article>
-<article class="card"><img src="noodles.svg" alt="Dry noodles"><h3>DRY NOODLES</h3></article>
+<img src="images/coffee.jpg" alt="Roasted coffee">
+<img src="images/cacao.jpg" alt="Bean-to-bar chocolate">
+<img src="images/jerky.jpg" alt="Beef jerky">
+<img src="images/fruit.jpg" alt="Dried fruit">
+<img src="images/noodles.jpg" alt="Dry noodles">
 </section>
 </main>
 </body>
