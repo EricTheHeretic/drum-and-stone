@@ -12,24 +12,18 @@
   <nav><a href="#goods">Goods</a><span class="menu">☰</span></nav>
 </header>
 <main>
-  <img class="mark" id="logo" alt="Roasting drum on a stone cairn">
+  <img class="mark" src="images/logo.svg" alt="Roasting drum on a stone cairn">
   <p class="place">SOUTH FORK, PENNSYLVANIA</p>
   <h1>Coffee, chocolate, and<br>food for the pack.</h1>
   <p class="lede">Roasted on a drum. Chocolate ground stone-fine.<br>Jerky, fruit, and noodles dried for the trail.</p>
-  <a href="#goods"><img class="pine" id="pine" alt="See the goods"></a>
+  <a href="#goods"><img class="pine" src="images/pine.svg" alt="See the goods"></a>
   <section class="grid" id="goods">
-    <article class="card"><img id="coffee" alt=""><h3>ROASTED COFFEE</h3></article>
-    <article class="card"><img id="cacao" alt=""><h3>BEAN-TO-BAR CHOCOLATE</h3></article>
-    <article class="card"><img id="jerky" alt=""><h3>BEEF JERKY</h3></article>
-    <article class="card"><img id="fruit" alt=""><h3>DRIED FRUIT</h3></article>
-    <article class="card"><img id="noodles" alt=""><h3>DRY NOODLES</h3></article>
+    <img src="images/coffee.svg" alt="Roasted coffee">
+    <img src="images/cacao.svg" alt="Bean-to-bar chocolate">
+    <img src="images/jerky.svg" alt="Beef jerky">
+    <img src="images/fruit.svg" alt="Dried fruit">
+    <img src="images/noodles.svg" alt="Dry noodles">
   </section>
 </main>
-<script>
-const names = ["logo","pine","coffee","cacao","jerky","fruit","noodles"];
-Promise.all(names.map(n => fetch("images/" + n + ".b64").then(r => r.text()).then(t => {
-  document.getElementById(n).src = "data:image/png;base64," + t.trim();
-})));
-</script>
 </body>
 </html>
