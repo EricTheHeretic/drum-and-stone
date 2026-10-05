@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Drum and Stone mark">
+  <rect width="240" height="240" fill="#e7d7b8"/>
+  <g fill="none" stroke="#1c1712" stroke-width="6" stroke-linejoin="round">
+    <path d="M70 168c8-28 18-40 28-40s20 12 28 40"/>
+    <path d="M78 168h84"/>
+    <path d="M92 128c6-22 14-34 28-34s22 12 28 34"/>
+    <ellipse cx="120" cy="86" rx="34" ry="16"/>
+    <path d="M86 86v28M154 86v28"/>
+    <path d="M98 100h44M102 112h36"/>
+    <path d="M46 188h148"/>
+    <path d="M58 188c8 16 18 22 28 22s16-8 18-22"/>
+    <path d="M136 188c6 18 16 26 28 26s20-10 24-26"/>
+  </g>
+</svg>
