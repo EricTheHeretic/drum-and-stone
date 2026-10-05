@@ -1,18 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 400" role="img" aria-label="Drum and Stone, South Fork Pennsylvania">
-  <rect width="360" height="400" fill="#d7c4a3"/>
-  <rect x="70" y="28" width="220" height="250" fill="none" stroke="#1c1612" stroke-width="3"/>
-  <g fill="none" stroke="#1c1612" stroke-width="2.4" stroke-linejoin="round">
-    <ellipse cx="180" cy="78" rx="52" ry="14"/>
-    <path d="M128 78v62c0 8 23 16 52 16s52-8 52-16V78"/>
-    <path d="M128 98h104M128 118h104"/>
-    <ellipse cx="180" cy="140" rx="52" ry="14"/>
-    <path d="M146 154v18M180 156v16M214 154v18"/>
-  </g>
-  <g fill="none" stroke="#1c1612" stroke-width="2" stroke-linejoin="round">
-    <path d="M118 168l16 14 18-10 20 16 22-12 24 14 18-8 16 18"/>
-    <path d="M108 196l22 16 20-8 24 18 26-10 22 16 18-6 20 14"/>
-    <path d="M100 226l24 18 22-8 28 16 24-12 26 14 22-8 18 12"/>
-    <path d="M112 252l20 10 26-6 22 12 28-8 24 10 18-6"/>
-  </g>
-  <text x="180" y="330" text-anchor="middle" font-family="Georgia, serif" font-size="15" letter-spacing="2.5" fill="#1c1612">SOUTH FORK, PENNSYLVANIA</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<rect width="200" height="200" fill="#c8ae8c"/>
+<g fill="none" stroke="#1c1612" stroke-width="2.4" stroke-linejoin="round">
+<rect x="28" y="18" width="144" height="164"/>
+<ellipse cx="100" cy="58" rx="36" ry="12"/>
+<path d="M64 58v34c0 9 16 16 36 16s36-7 36-16V58"/>
+<path d="M64 74h72M64 84h72"/>
+<ellipse cx="100" cy="92" rx="36" ry="10"/>
+<path d="M70 112c6 8 10 8 14 2s8 8 12 2 8 8 12 2 8 8 12 2 6-4 10-8"/>
+<path d="M62 128c8 10 12 8 16 2s10 10 14 2 10 10 14 2 10 10 14 2 8-6 12-8"/>
+<path d="M56 146c8 12 14 8 18 2s12 12 16 2 12 12 16 2 12 12 16 2 10-8 14-10"/>
+<path d="M52 162h96"/>
+</g>
 </svg>
