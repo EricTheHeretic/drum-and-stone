@@ -9,28 +9,18 @@
 <body>
 <header>
 <a class="logo" href="/" aria-label="Drum and Stone">Drum and Stone</a>
-<nav>
-<a href="shop.html" aria-current="page">Shop</a>
-<div class="goods"><button type="button">Goods</button>
-<div class="panel">
-<a href="#coffee">Coffee</a>
-<a href="#chocolate">Chocolate</a>
-<a href="#beef">Beef</a>
-<a href="#fruit">Dried fruit</a>
-<a href="#noodles">Dry noodles</a>
-</div></div>
-</nav>
+<a class="shop-link" href="shop.html">Shop</a>
 </header>
-<main class="shop">
-<p class="place">THE SHOP</p>
+<main class="shop-page">
+<p class="place">The shop</p>
 <h1>Not for sale yet.</h1>
-<p class="lede">Leave a note. Nothing ships until the Pennsylvania kitchen registration is in.</p>
-<article id="coffee"><h2>Coffee</h2><p>Roasted on the drum in South Fork. Whole bean.</p></article>
-<article id="chocolate"><h2>Chocolate</h2><p>Bean to bar, ground fine.</p></article>
-<article id="beef"><h2>Beef</h2><p>Jerky and biltong, dried for the pack.</p></article>
-<article id="fruit"><h2>Dried fruit</h2><p>Fruit dried down so it keeps.</p></article>
-<article id="noodles"><h2>Dry noodles</h2><p>Alkaline dough, dried, no egg.</p></article>
-<form class="note-form" action="mailto:eric@drumandstone.com" method="post" enctype="text/plain">
+<p>Leave a note. Nothing ships until the Pennsylvania kitchen registration is in.</p>
+<article class="item" id="coffee"><div><h2>Coffee</h2><p>Roasted on the drum in South Fork. Whole bean.</p></div></article>
+<article class="item" id="chocolate"><div><h2>Chocolate</h2><p>Bean to bar, ground fine.</p></div></article>
+<article class="item" id="beef"><div><h2>Beef</h2><p>Jerky and biltong, dried for the pack.</p></div></article>
+<article class="item" id="fruit"><div><h2>Dried fruit</h2><p>Fruit dried down so it keeps.</p></div></article>
+<article class="item" id="noodles"><div><h2>Dry noodles</h2><p>Alkaline dough, dried, no egg.</p></div></article>
+<form action="mailto:eric@drumandstone.com" method="post" enctype="text/plain">
 <h2>Order note</h2>
 <label>Name<input name="name" required></label>
 <label>Email<input type="email" name="email" required></label>
@@ -38,6 +28,5 @@
 <button type="submit">Send the note</button>
 </form>
 </main>
-<script>document.querySelector('.goods button').onclick=function(){this.parentNode.classList.toggle('open')}</script>
 </body>
 </html>
