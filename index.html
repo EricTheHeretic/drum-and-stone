@@ -4,45 +4,40 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Drum & Stone — Coffee, chocolate, and camp food from South Fork</title>
-  <meta name="description" content="Drum & Stone makes roasted coffee, bean-to-bar chocolate, beef jerky, dried fruit, and dry noodles in South Fork, Pennsylvania.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><img src="logo.svg" alt="Drum and Stone logo" width="120" height="90"> Drum &amp; Stone</a>
+    <a class="brand" href="index.html">Drum & Stone</a>
     <nav>
       <a href="#goods">Goods</a>
-      <a href="about.html">About</a>
-      <a href="#order">Order</a>
+      <button class="menu" aria-label="Menu" type="button">☰</button>
     </nav>
   </header>
   <main>
     <section class="hero">
-      <img class="hero-logo" src="logo.svg" alt="Roasting drum on a creek stone">
+      <img class="hero-logo" src="logo.svg" alt="Roasting drum on a stone cairn">
       <p class="eyebrow">South Fork, Pennsylvania</p>
       <h1>Coffee, chocolate, and food for the pack.</h1>
-      <p class="lede">Roasted on a drum. Chocolate ground stone-fine. Jerky, fruit, and noodles dried for the trail. Made by Drum &amp; Stone LLC.</p>
-      <a class="button" href="#goods">See the goods</a>
+      <p class="lede">Roasted on a drum. Chocolate ground stone-fine.<br>Jerky, fruit, and noodles dried for the trail.</p>
+      <a class="pine" href="#goods">See the goods</a>
     </section>
     <section id="goods" class="goods">
-      <h2>The goods</h2>
       <div class="grid" id="product-grid"></div>
     </section>
     <section id="order" class="order">
       <h2>Order</h2>
-      <p>Checkout is not open yet. The kitchen is registering as a Pennsylvania Limited Food Establishment. Leave what you want and we will write back when a batch is legal to sell.</p>
+      <p>Checkout is not open yet. Leave what you want and we will write back when a batch is legal to sell.</p>
       <form id="order-form">
         <label>Name <input name="name" required></label>
         <label>Email <input name="email" type="email" required></label>
-        <label>What do you want <textarea name="note" rows="4" placeholder="Two bags of coffee, one bar of chocolate..."></textarea></label>
+        <label>What do you want <textarea name="note" rows="4"></textarea></label>
         <button class="button" type="submit">Send the note</button>
         <p id="form-status" class="status"></p>
       </form>
     </section>
   </main>
-  <footer>
-    <p>Drum &amp; Stone LLC · South Fork, Pennsylvania · drumandstone.com</p>
-  </footer>
+  <footer>Drum & Stone LLC · South Fork, Pennsylvania · drumandstone.com</footer>
   <script src="app.js"></script>
 </body>
 </html>
