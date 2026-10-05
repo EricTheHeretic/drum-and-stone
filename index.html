@@ -3,45 +3,43 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Drum & Stone</title>
+<title>Drum and Stone</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
-<a href="/">Drum &amp; Stone</a>
+<a href="/">Drum and Stone</a>
 <nav>
 <a href="shop.html">Shop</a>
-<div class="goods">
-<button type="button" aria-expanded="false">Goods ☰</button>
+<div class="goods"><button type="button">Goods</button>
 <div class="panel">
-<a href="shop.html#coffee">Roasted coffee</a>
-<a href="shop.html#chocolate">Bean-to-bar chocolate</a>
-<a href="shop.html#jerky">Beef jerky</a>
+<a href="shop.html#coffee">Coffee</a>
+<a href="shop.html#chocolate">Chocolate</a>
+<a href="shop.html#beef">Beef</a>
 <a href="shop.html#fruit">Dried fruit</a>
 <a href="shop.html#noodles">Dry noodles</a>
-<a href="shop.html">All goods</a>
-</div>
-</div>
+</div></div>
 </nav>
 </header>
 <main>
-<img class="mark" src="images/log.jpg" alt="Roasting drum on a stone cairn">
+<svg class="brand" viewBox="0 0 280 340" aria-label="Drum and Stone">
+<rect x="28" y="36" width="46" height="118" fill="#111"/>
+<rect x="28" y="168" width="46" height="136" fill="#111"/>
+<text x="96" y="118" font-family="Arial,sans-serif" font-size="54" letter-spacing="2">DRUM</text>
+<text x="96" y="186" font-family="Arial,sans-serif" font-size="54" letter-spacing="2">AND</text>
+<text x="96" y="254" font-family="Arial,sans-serif" font-size="54" letter-spacing="2">STONE</text>
+</svg>
 <p class="place">SOUTH FORK, PENNSYLVANIA</p>
-<h1>Coffee, chocolate, and<br>food for the pack.</h1>
+<h1>Coffee, chocolate, and food for the pack.</h1>
 <p class="lede">Small-batch goods from South Fork. Made to carry.</p>
-<section class="grid" id="goods">
-<a href="shop.html#coffee"><img src="images/coffee.jpg" alt="Roasted coffee"></a>
-<a href="shop.html#chocolate"><img src="images/cacao.jpg" alt="Bean-to-bar chocolate"></a>
-<a href="shop.html#jerky"><img src="images/jerky.jpg" alt="Beef jerky"></a>
-<a href="shop.html#fruit"><img src="images/fruit.jpg" alt="Dried fruit"></a>
-<a href="shop.html#noodles"><img src="images/noodles.jpg" alt="Dry noodles"></a>
+<section class="grid">
+<a class="card" href="shop.html#coffee"><svg viewBox="0 0 120 90"><g fill="none" stroke="#111" stroke-width="1.6"><ellipse cx="60" cy="28" rx="22" ry="6"/><path d="M38 28v20c0 4 10 7 22 7s22-3 22-7V28M38 36h44"/></g></svg><span>COFFEE</span></a>
+<a class="card" href="shop.html#chocolate"><svg viewBox="0 0 120 90"><g fill="none" stroke="#111" stroke-width="1.6"><ellipse cx="46" cy="48" rx="12" ry="18"/><ellipse cx="74" cy="48" rx="12" ry="18"/><path d="M60 16v16"/></g></svg><span>CHOCOLATE</span></a>
+<a class="card" href="shop.html#beef"><svg viewBox="0 0 120 90"><g fill="none" stroke="#111" stroke-width="1.6"><rect x="24" y="36" width="72" height="22" rx="2" transform="rotate(-6 60 47)"/><path d="M32 44h54M34 50h50"/></g></svg><span>BEEF</span></a>
+<a class="card" href="shop.html#fruit"><svg viewBox="0 0 120 90"><g fill="none" stroke="#111" stroke-width="1.6"><path d="M60 22c8 10 6 16 0 20-16 2-24 14-24 26 0 10 10 16 24 16s24-6 24-16c0-12-8-24-24-26z"/></g></svg><span>DRIED FRUIT</span></a>
+<a class="card" href="shop.html#noodles"><svg viewBox="0 0 120 90"><g fill="none" stroke="#111" stroke-width="1.6"><ellipse cx="60" cy="48" rx="28" ry="16"/><path d="M36 44c8 6 14 6 22 0s16 6 22 0M38 52c8 5 14 5 22 0s14 5 20 0"/></g></svg><span>DRY NOODLES</span></a>
 </section>
 </main>
-<script>
-document.querySelector('.goods button').addEventListener('click', function(){
-  var open = this.parentNode.classList.toggle('open');
-  this.setAttribute('aria-expanded', open);
-});
-</script>
+<script>document.querySelector('.goods button').onclick=function(){this.parentNode.classList.toggle('open')}</script>
 </body>
 </html>

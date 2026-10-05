@@ -3,48 +3,37 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shop — Drum & Stone</title>
+<title>Shop — Drum and Stone</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
-<a href="/">Drum &amp; Stone</a>
+<a href="/">Drum and Stone</a>
 <nav>
 <a href="shop.html" aria-current="page">Shop</a>
-<div class="goods">
-<button type="button" aria-expanded="false">Goods ☰</button>
+<div class="goods"><button type="button">Goods</button>
 <div class="panel">
-<a href="#coffee">Roasted coffee</a>
-<a href="#chocolate">Bean-to-bar chocolate</a>
-<a href="#jerky">Beef jerky</a>
-<a href="#fruit">Dried fruit</a>
-<a href="#noodles">Dry noodles</a>
-</div>
-</div>
+<a href="#coffee">Coffee</a><a href="#chocolate">Chocolate</a><a href="#beef">Beef</a><a href="#fruit">Dried fruit</a><a href="#noodles">Dry noodles</a>
+</div></div>
 </nav>
 </header>
 <main class="shop">
 <p class="place">THE GOODS</p>
 <h1>Shop</h1>
-<p class="lede">Not for sale yet. Leave a note and it will be here when the kitchen is registered.</p>
-<article id="coffee" class="item"><img src="images/coffee.jpg" alt="Roasted coffee"><div><h2>Roasted coffee</h2><p>Drum-roasted in South Fork. Whole bean.</p></div></article>
-<article id="chocolate" class="item"><img src="images/cacao.jpg" alt="Bean-to-bar chocolate"><div><h2>Bean-to-bar chocolate</h2><p>Cacao ground stone-fine and set into bars.</p></div></article>
-<article id="jerky" class="item"><img src="images/jerky.jpg" alt="Beef jerky"><div><h2>Beef jerky</h2><p>Dried for the pack. Shelf-stable once tested.</p></div></article>
-<article id="fruit" class="item"><img src="images/fruit.jpg" alt="Dried fruit"><div><h2>Dried fruit</h2><p>Fruit dried down so it keeps.</p></div></article>
-<article id="noodles" class="item"><img src="images/noodles.jpg" alt="Dry noodles"><div><h2>Dry noodles</h2><p>Alkaline dough, dried, no egg.</p></div></article>
+<p class="lede">Not for sale yet. Leave a note until the kitchen is registered.</p>
+<article class="item" id="coffee"><h2>Coffee</h2><p>Drum-roasted in South Fork. Whole bean.</p></article>
+<article class="item" id="chocolate"><h2>Chocolate</h2><p>Bean-to-bar, ground stone-fine.</p></article>
+<article class="item" id="beef"><h2>Beef</h2><p>Jerky and biltong, dried for the pack.</p></article>
+<article class="item" id="fruit"><h2>Dried fruit</h2><p>Fruit dried down so it keeps.</p></article>
+<article class="item" id="noodles"><h2>Dry noodles</h2><p>Alkaline dough, dried, no egg.</p></article>
 <form class="note" action="mailto:eric@drumandstone.com" method="post" enctype="text/plain">
 <h2>Order note</h2>
 <label>Name<input name="name" required></label>
-<label>Email<input name="email" type="email" required></label>
+<label>Email<input type="email" name="email" required></label>
 <label>What you want<textarea name="order" rows="4" required></textarea></label>
 <button type="submit">Send the note</button>
 </form>
 </main>
-<script>
-document.querySelector('.goods button').addEventListener('click', function(){
-  var open = this.parentNode.classList.toggle('open');
-  this.setAttribute('aria-expanded', open);
-});
-</script>
+<script>document.querySelector('.goods button').onclick=function(){this.parentNode.classList.toggle('open')}</script>
 </body>
 </html>
