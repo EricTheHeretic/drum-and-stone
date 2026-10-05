@@ -1,20 +1,16 @@
-:root { --ink:#1c1612; --paper:#c8ae8c; --card:#d8c4a4; --line:#1c1612; }
+:root { --ink:#1c1612; --kraft:#c4a574; }
 * { box-sizing:border-box; }
-body { margin:0; font-family:Georgia,'Iowan Old Style',serif; background:var(--paper); color:var(--ink); }
+body { margin:0; background:var(--kraft); color:var(--ink); font-family:Georgia,"Iowan Old Style",serif; }
 a { color:inherit; text-decoration:none; }
 .site-header { display:flex; justify-content:space-between; align-items:center; padding:1.4rem 4vw; }
-.brand { font-weight:700; letter-spacing:.02em; }
-nav { display:flex; gap:1.2rem; align-items:center; }
-.menu { font-size:1.4rem; }
-.hero { text-align:center; padding:1rem 8vw 2rem; }
-.mark { width:148px; height:148px; }
-.place { letter-spacing:.18em; font-size:.78rem; margin:1rem 0 .4rem; }
-h1 { font-size:clamp(2.6rem,6vw,4.6rem); line-height:1.02; font-weight:500; margin:.2rem auto .8rem; max-width:14ch; }
-.lede { max-width:28rem; margin:0 auto 1.4rem; font-size:1.15rem; }
-.pine { width:148px; height:92px; margin:0 auto 2rem; display:block; }
+.brand { font-size:1.35rem; }
+.menu { margin-left:1rem; font-size:1.4rem; }
+.hero { text-align:center; padding:0 8vw 1rem; }
+.logo, .mark { width:168px; height:auto; }
+.eyebrow, .place { letter-spacing:.22em; text-transform:uppercase; font-size:.78rem; margin:.8rem 0; }
+h1 { font-size:clamp(2.6rem,6vw,4.6rem); line-height:1.02; font-weight:500; margin:.2rem auto; max-width:14ch; }
+.lede { font-size:1.15rem; }
+.pine { width:150px; height:auto; margin:1rem auto 1.4rem; display:inline-block; }
 .grid { display:grid; grid-template-columns:repeat(5,1fr); gap:.8rem; padding:0 4vw 3rem; }
-.card { background:var(--card); border:1px solid #b79a78; min-height:180px; padding:1.2rem .6rem; text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:space-between; }
-.card svg { width:84px; height:72px; }
-.card h3 { font-size:.82rem; letter-spacing:.08em; font-weight:600; margin:.6rem 0 0; }
-@media (max-width:900px) { .grid { grid-template-columns:1fr 1fr; } }
-@media (max-width:560px) { .grid { grid-template-columns:1fr; } }
+.grid img, .card { width:100%; height:auto; display:block; background:#e6d3b0; }
+@media (max-width:800px) { .grid { grid-template-columns:1fr 1fr; } }
