@@ -7,28 +7,28 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="top">
+<header>
+<a class="word" href="/">Drum and Stone</a>
 <a class="shop" href="shop.html">Shop</a>
-<div class="stage">
-<a class="mark" href="/" aria-label="Drum and Stone"><span class="bars"><i></i><i></i></span><span><b>DRUM</b><b>AND</b><b>STONE</b></span></a>
-</div>
+</header>
 <main class="shop-page">
-<p class="place">The shop</p>
-<h1>Not for sale yet.</h1>
-<p class="lede">Leave a note. Nothing ships until the Pennsylvania kitchen registration is in.</p>
-<article class="item" id="coffee"><h2>Coffee</h2><p>Whole bean, roasted on the drum in South Fork.</p></article>
-<article class="item" id="chocolate"><h2>Chocolate</h2><p>Bean to bar, ground fine.</p></article>
-<article class="item" id="beef"><h2>Beef</h2><p>Jerky and biltong, dried for the pack.</p></article>
-<article class="item" id="fruit"><h2>Dried fruit</h2><p>Fruit dried down so it keeps.</p></article>
-<article class="item" id="noodles"><h2>Dry noodles</h2><p>Alkaline dough, dried, no egg.</p></article>
+<p class="place">SOUTH FORK, PENNSYLVANIA</p>
+<h1>The shop is a note, for now.</h1>
+<p class="lede">Nothing is for sale until the Pennsylvania kitchen registration is in. Leave what you want. We will write back.</p>
+<section class="list">
+<article id="coffee"><h2>Coffee</h2><p>Whole bean, roasted on the drum in South Fork.</p></article>
+<article id="chocolate"><h2>Chocolate</h2><p>Bean to bar, ground fine.</p></article>
+<article id="beef"><h2>Beef</h2><p>Jerky and biltong, dried down.</p></article>
+<article id="fruit"><h2>Dried fruit</h2><p>Figs and fruit dried so they keep.</p></article>
+<article id="noodles"><h2>Dry noodles</h2><p>Alkaline dough, dried, no egg.</p></article>
+</section>
 <form action="mailto:eric@drumandstone.com" method="post" enctype="text/plain">
 <h2>Order note</h2>
 <label>Name<input name="name" required></label>
 <label>Email<input type="email" name="email" required></label>
-<label>What you want<textarea name="order" rows="4" required></textarea></label>
+<label>What you want<textarea name="order" rows="5" required></textarea></label>
 <button type="submit">Send the note</button>
 </form>
 </main>
-</div>
 </body>
 </html>
