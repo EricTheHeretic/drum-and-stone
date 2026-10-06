@@ -17,6 +17,16 @@ There is no earlier ramen PDF in the repo or in the stored project notes. This f
 
 A Limited Food Establishment kitchen can make non-potentially-hazardous food that does not need refrigeration after it is made. Fresh noodles and broth are the wrong product for that license. The pack is the dry noodle. Broth, if offered later, is a separate decision and is not part of this product.
 
+## Broth and vegetables
+
+No broth recipe or vegetable list was stored. The picture on the site is a cooked bowl. That is not the pack.
+
+What cannot go in the pack under this license: fresh broth, meat stock, fresh-cut vegetables, cooked vegetables, garlic in oil, or anything that has to be refrigerated.
+
+What can be considered, still unchosen: a dry seasoning packet, and vegetables that are already dry when they go in the bag. Dried mushroom, dried scallion, dried seaweed. Salt, dried ginger, dried garlic, chili. Soy only if the allergen line says so. No amounts are set.
+
+The customer boils water. The packet is not a jar of broth.
+
 ## What still has to be written down before the application
 
 - Flour or blend, and whether any egg is used. Egg makes the review harder. Start with an eggless wheat noodle.
@@ -33,4 +43,4 @@ Product name, Drum & Stone, South Fork, Pennsylvania, net weight, ingredients in
 
 ## Open
 
-Recipe, alkali level, dry schedule, pack size, and the lab water activity are not set. This note does not invent them.
+Recipe, alkali level, dry schedule, pack size, seasoning, dried vegetables, and the lab water activity are not set. This note does not invent them.
